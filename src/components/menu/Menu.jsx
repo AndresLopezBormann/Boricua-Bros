@@ -1,8 +1,9 @@
 import React from 'react'
+import './Menu.css'
 
 const Menu = () => {
   return (
-    <div>Menu</div>
+    <section id='menu'>Menu</section>
   )
 }
 
