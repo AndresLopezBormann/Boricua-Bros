@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* Styling throughout the Website */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Setting all colors, widths , transitions */
+:root {
+    --color-bg: #dad7cd;
+    --color-bg-variation: #a3b18a;
+    --color-primary: #588157;
+    --color-primary-variation: #3a5a40;
+
+    --color-white: white;
+    --color-light: lightgrey;
+
+    --container-width-lg: 75%;
+    --container-width-med: 86%;
+    --container-width-sm: 90%;
+}
+
+/* Setting scroll when click so it's not rapid */
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Hiding Scrollbar */
+::-webkit-scrollbar {
+    display : none;
+}
+
+/* Hiding Scrollbar */
+body{
+    font-family : 'Open Sans', sans-serif;
+    background: var(--color-bg);
+    color:var(--color-white);
+    line-height: 1.7;
+}
+
+/*##### General Styles #####*/
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+
+h1 , h2 , h3 , h4, h5 {
+    font-weight: 500%;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section {
+    margin-top: 4rem;
+}
+
+section > h2 , section > h5 {
+    text-align: center;
+    color: var(--color-light)
+}
+
+section > h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light {
+    color: var(--color-light)
+}
+
+a {
+    color: var(--color-primary);
+    transition: var(--transition)
+}
+
+a:hover{
+    color:var(--color-white)
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ##### Medium Devices ##### */
+
+@media screen and (max-width: 1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+    section {
+        margin-top: 6rem;
+    }
+}
+/* ##### Small Devices ##### */
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    section > h2 {
+        margin-bottom: 2rem;
+    }
 }
