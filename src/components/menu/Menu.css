@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     gap: 2.5rem;
-
+    
 }
 
 .menu__item {
@@ -46,6 +46,7 @@
     .menu__container{
     grid-template-columns: 1fr 1fr ;
     gap: 1.2rem; 
+    
     }
 }
  
