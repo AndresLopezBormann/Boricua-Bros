@@ -33,12 +33,9 @@ const About = () => {
             <small>Place to celebrate and show off Awards</small>
           </article>
         </div>
-
-        <p>Hello! My name is Andres Lopez-Bormann.</p>
-        <a href='#contact' className='btn btn-primary'>Let't Talk</a>
         </div>
       </div>
-        
+
     </section>
     
   )
